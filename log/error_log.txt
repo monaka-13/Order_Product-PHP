@@ -1,0 +1,30 @@
+[04-Jul-2025 12:44:49 America/Vancouver] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php:25
+Stack trace:
+#0 C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php(25): array_push(NULL, 'input correct E...')
+#1 C:\xampp\htdocs\demo\Order_Product-PHP\app.php(10): Validate::validateForm()
+#2 {main}
+  thrown in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 25
+[04-Jul-2025 12:47:22 America/Vancouver] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php:22
+Stack trace:
+#0 C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php(22): array_push(NULL, 'Email Address i...')
+#1 C:\xampp\htdocs\demo\Order_Product-PHP\app.php(10): Validate::validateForm()
+#2 {main}
+  thrown in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 22
+[04-Jul-2025 12:50:31 America/Vancouver] Name is required.
+[04-Jul-2025 12:50:31 America/Vancouver] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php:22
+Stack trace:
+#0 C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php(22): array_push(NULL, 'Email Address i...')
+#1 C:\xampp\htdocs\demo\Order_Product-PHP\app.php(10): Validate::validateForm()
+#2 {main}
+  thrown in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 22
+[04-Jul-2025 12:50:39 America/Vancouver] Name is required.
+[04-Jul-2025 12:50:48 America/Vancouver] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php:22
+Stack trace:
+#0 C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php(22): array_push(NULL, 'Email Address i...')
+#1 C:\xampp\htdocs\demo\Order_Product-PHP\app.php(10): Validate::validateForm()
+#2 {main}
+  thrown in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 22
+[04-Jul-2025 12:52:32 America/Vancouver] Email Address is required.
+[04-Jul-2025 12:52:40 America/Vancouver] Name is required.
+[04-Jul-2025 12:52:40 America/Vancouver] Email Address is required.
+[04-Jul-2025 12:53:18 America/Vancouver] Name is required.

@@ -121,7 +121,7 @@ class Page
 					</tr>
 					<tr>
 						<th>Email</th>
-						<td>Email entry</td>
+						<td><?= $values['email'] ?></td>
 					</tr>
 					<tr>
 						<th>Phone</th>
