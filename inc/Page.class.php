@@ -81,19 +81,34 @@ class Page
 		<section class="sidebar">
 		<?php
 			}
-			static function showNotification($valid_status)
+			static function showNotification($error_notifications)
 			{
 		?>
 			<div class="highlight">
-				<p>Please fix the following errors:</p>
-				<ul>
-					<li>Error 1</li>
-					<li>Error 2</li>
-				</ul>
+				<?php
+				if (count($error_notifications) == 0) {
+				?>
+					<p>thank you</p>
+				<?php
+				} else {
+				?>
+					<p>Please fix the following errors:</p>
+					<ul>
+						<?php
+						foreach ($error_notifications as $value) {
+							echo "<li>" . $value . "</li>";
+						}
+						?>
+						<li>Error 1</li>
+						<li>Error 2</li>
+					</ul>
+				<?php
+				}
+				?>
 			</div>
 		<?php
 			}
-			static function showData($shippingCost)
+			static function showData($values)
 			{
 		?>
 			<div class="data">
@@ -102,7 +117,7 @@ class Page
 
 					<tr>
 						<th>Name</th>
-						<td>Name entry</td>
+						<td><?= $values['fullName'] ?></td>
 					</tr>
 					<tr>
 						<th>Email</th>

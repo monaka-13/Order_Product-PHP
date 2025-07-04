@@ -8,10 +8,10 @@ if (!isset($_POST["submit"])) {
   Page::showForm([]);
 } else {
   if (Validate::validateForm()) {
-    Page::showNotification(Validate::$valid_status); // thank you
-    Page::showData(0);
+    Page::showNotification([]); // thank you
+    Page::showData(Validate::$valid_status["values"]);
   } else {
-    Page::showNotification(Validate::$valid_status); // error
+    Page::showNotification(Validate::$valid_status["error_notifications"]); // error
     Page::showForm(Validate::$valid_status);
   }
 }
