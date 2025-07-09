@@ -60,6 +60,14 @@ class Validate
       $values["giftWrap"] = $_POST["giftWrap"];
     }
 
+    // Shipping Priority
+    if (empty($_POST["shipping"])||$_POST["shipping"]=="Select...") {
+      array_push($error_notifications, "Shipping Priority is required.");
+      error_log("Shipping Priority is required.");
+    } else {
+      $values["shipping"] = $_POST["shipping"];
+    }
+
     self::$valid_status["values"] = $values;
     self::$valid_status["error_notifications"] = $error_notifications;
     print_r(self::$valid_status);

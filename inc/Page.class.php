@@ -61,9 +61,9 @@ class Page
 						<label for="shipping">Shipping Priority</label>
 						<select name="shipping">
 							<option value="Select...">Please select one option</option>
-							<option value="regular">Regular - $6</option>
-							<option value="express">Express - $15</option>
-							<option value="priority">Priority - $25</option>
+							<option value="regular" <?=isset($valid_status['values']['shipping'])&&$valid_status['values']['shipping']=="regular"?"selected":""?>>Regular - $6</option>
+							<option value="express" <?=isset($valid_status['values']['shipping'])&&$valid_status['values']['shipping']=="express"?"selected":""?>>Express - $15</option>
+							<option value="priority" <?=isset($valid_status['values']['shipping'])&&$valid_status['values']['shipping']=="priority"?"selected":""?>>Priority - $25</option>
 						</select>
 					</div>
 					<div>
@@ -133,7 +133,7 @@ class Page
 					</tr>
 					<tr>
 						<th>Shipping</th>
-						<td>Shipping entry</td>
+						<td><?= $values['shipping'] ?></td>
 					</tr>
 					<tr>
 						<th>Total Cost</th>
