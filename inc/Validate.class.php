@@ -70,7 +70,6 @@ class Validate
 
     self::$valid_status["values"] = $values;
     self::$valid_status["error_notifications"] = $error_notifications;
-    print_r(self::$valid_status);
     return count($error_notifications) == 0;
   }
 }

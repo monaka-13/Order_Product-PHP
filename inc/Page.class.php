@@ -84,7 +84,7 @@ class Page
 				<?php
 				if (count($error_notifications) == 0) {
 				?>
-					<p>thank you</p>
+					<p>thank you!</p>
 				<?php
 				} else {
 				?>
