@@ -53,8 +53,8 @@ class Page
 					<div>
 						<label for="giftWrap">Gift wrap?</label>
 						<span>
-							<input type="radio" name="giftWrap" id="giftWrapYes" value="yes"> Yes
-							<input type="radio" name="giftWrap" id="giftWrapNo" value="no"> No
+							<input type="radio" name="giftWrap" id="giftWrapYes" value="yes" <?=isset($valid_status['values']['giftWrap'])&&$valid_status['values']['giftWrap']=="yes"?"checked":""?>> Yes
+							<input type="radio" name="giftWrap" id="giftWrapNo" value="no" <?=isset($valid_status['values']['giftWrap'])&&$valid_status['values']['giftWrap']=="no"?"checked":""?>> No
 						</span>
 					</div>
 					<div>
@@ -129,7 +129,7 @@ class Page
 					</tr>
 					<tr>
 						<th>Gift Wrap?</th>
-						<td>Gift entry</td>
+						<td><?= $values['giftWrap'] ?></td>
 					</tr>
 					<tr>
 						<th>Shipping</th>

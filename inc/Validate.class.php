@@ -52,7 +52,13 @@ class Validate
       $values["productAmount"] = $_POST["productAmount"];
     }
 
-
+    // Gift Wrap
+    if (empty($_POST["giftWrap"])) {
+      array_push($error_notifications, "Gift Wrap is required.");
+      error_log("Gift Wrap is required.");
+    } else {
+      $values["giftWrap"] = $_POST["giftWrap"];
+    }
 
     self::$valid_status["values"] = $values;
     self::$valid_status["error_notifications"] = $error_notifications;

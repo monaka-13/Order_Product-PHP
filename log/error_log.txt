@@ -42,3 +42,28 @@
 [09-Jul-2025 14:22:02 America/Vancouver] Email Address is required.
 [09-Jul-2025 14:22:02 America/Vancouver] Phone is required.
 [09-Jul-2025 14:22:02 America/Vancouver] Product Amount is limited between 1 and 6
+[09-Jul-2025 14:30:24 America/Vancouver] PHP Warning:  Undefined array key "values" in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Page.class.php on line 56
+[09-Jul-2025 14:30:24 America/Vancouver] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Page.class.php on line 56
+[09-Jul-2025 14:30:24 America/Vancouver] PHP Warning:  Undefined array key "values" in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Page.class.php on line 57
+[09-Jul-2025 14:30:24 America/Vancouver] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Page.class.php on line 57
+[09-Jul-2025 14:32:39 America/Vancouver] Name is required.
+[09-Jul-2025 14:32:39 America/Vancouver] Email Address is required.
+[09-Jul-2025 14:32:39 America/Vancouver] Phone is required.
+[09-Jul-2025 14:32:39 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:33:41 America/Vancouver] Name is required.
+[09-Jul-2025 14:33:41 America/Vancouver] Email Address is required.
+[09-Jul-2025 14:33:41 America/Vancouver] Phone is required.
+[09-Jul-2025 14:33:41 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:33:46 America/Vancouver] Name is required.
+[09-Jul-2025 14:33:46 America/Vancouver] Email Address is required.
+[09-Jul-2025 14:33:46 America/Vancouver] Phone is required.
+[09-Jul-2025 14:33:46 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:33:53 America/Vancouver] Name is required.
+[09-Jul-2025 14:33:53 America/Vancouver] Email Address is required.
+[09-Jul-2025 14:33:53 America/Vancouver] Phone is required.
+[09-Jul-2025 14:33:53 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:34:05 America/Vancouver] Name is required.
+[09-Jul-2025 14:34:05 America/Vancouver] Email Address is required.
+[09-Jul-2025 14:34:05 America/Vancouver] Phone is required.
+[09-Jul-2025 14:34:05 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:34:05 America/Vancouver] Gift Wrap is required.
