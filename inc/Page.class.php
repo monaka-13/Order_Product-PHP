@@ -53,17 +53,17 @@ class Page
 					<div>
 						<label for="giftWrap">Gift wrap?</label>
 						<span>
-							<input type="radio" name="giftWrap" id="giftWrapYes" value="yes" <?=isset($valid_status['values']['giftWrap'])&&$valid_status['values']['giftWrap']=="yes"?"checked":""?>> Yes
-							<input type="radio" name="giftWrap" id="giftWrapNo" value="no" <?=isset($valid_status['values']['giftWrap'])&&$valid_status['values']['giftWrap']=="no"?"checked":""?>> No
+							<input type="radio" name="giftWrap" id="giftWrapYes" value="yes" <?= isset($valid_status['values']['giftWrap']) && $valid_status['values']['giftWrap'] == "yes" ? "checked" : "" ?>> Yes
+							<input type="radio" name="giftWrap" id="giftWrapNo" value="no" <?= isset($valid_status['values']['giftWrap']) && $valid_status['values']['giftWrap'] == "no" ? "checked" : "" ?>> No
 						</span>
 					</div>
 					<div>
 						<label for="shipping">Shipping Priority</label>
 						<select name="shipping">
 							<option value="Select...">Please select one option</option>
-							<option value="regular" <?=isset($valid_status['values']['shipping'])&&$valid_status['values']['shipping']=="regular"?"selected":""?>>Regular - $6</option>
-							<option value="express" <?=isset($valid_status['values']['shipping'])&&$valid_status['values']['shipping']=="express"?"selected":""?>>Express - $15</option>
-							<option value="priority" <?=isset($valid_status['values']['shipping'])&&$valid_status['values']['shipping']=="priority"?"selected":""?>>Priority - $25</option>
+							<option value="regular" <?= isset($valid_status['values']['shipping']) && $valid_status['values']['shipping'] == "regular" ? "selected" : "" ?>>Regular - $6</option>
+							<option value="express" <?= isset($valid_status['values']['shipping']) && $valid_status['values']['shipping'] == "express" ? "selected" : "" ?>>Express - $15</option>
+							<option value="priority" <?= isset($valid_status['values']['shipping']) && $valid_status['values']['shipping'] == "priority" ? "selected" : "" ?>>Priority - $25</option>
 						</select>
 					</div>
 					<div>
@@ -137,13 +137,36 @@ class Page
 					</tr>
 					<tr>
 						<th>Total Cost</th>
-						<td>Total Cost</td>
+						<td><?= self::calculateTotal($values); ?></td>
 					</tr>
 				</table>
 			</div>
 		</section>
 
 <?php
+			}
+			static function calculateTotal($values)
+			{
+				$sum = $values["productAmount"] * ITEM_COST;
+				// discount
+				if ($sum > 100) {
+					$sum -= $sum * DISCOUNT;
+				}
+
+				// gift wrapping
+				if ($values["giftWrap"] == "yes") {
+					$sum += WRAP_COST;
+				}
+
+				// shipping
+				if (array_key_exists($values["shipping"], SHIPPING_PRICES)) {
+					$sum += SHIPPING_PRICES[$values["shipping"]];
+				}
+
+				// tax
+				$sum += $sum * TAX;
+
+				return $sum;
 			}
 		}
 ?>
