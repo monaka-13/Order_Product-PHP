@@ -22,37 +22,33 @@ class Page
 				<?php
 			}
 			static function getFooter()
-			{
-				?>
-					<!-- Start the page's footer -->
+			{ ?>
 			</article>
 		</body>
 
 		</html>
-	<?php
-			}
+	<?php }
 			static function showForm($valid_status)
-			{
-	?>
+			{ ?>
 		<div class="form">
 			<form action="" method="post">
 				<fieldset id="form">
 					<legend>Custom Build Order Page</legend>
 					<div>
 						<label for="fullName">Full Name</label>
-						<input type="text" name="fullName" id="fullName" placeholder="First and last name">
+						<input type="text" name="fullName" id="fullName" placeholder="First and last name" value="<?= isset($valid_status['values']['fullName']) ? $valid_status['values']['fullName'] : '' ?>">
 					</div>
 					<div>
 						<label for="email">Email Address</label>
-						<input type="email" name="email" id="email" placeholder="someone@here.ca">
+						<input type="email" name="email" id="email" placeholder="someone@here.ca" value="<?= isset($valid_status['values']['email']) ? $valid_status['values']['email'] : '' ?>">
 					</div>
 					<div>
 						<label for="phoneNumber">Phone Number</label>
-						<input type="text" name="phoneNumber" id="phoneNumber" placeholder="(nnn) nnn nnnn">
+						<input type="text" name="phoneNumber" id="phoneNumber" placeholder="(nnn) nnn nnnn" value="<?= isset($valid_status['values']['phoneNumber']) ? $valid_status['values']['phoneNumber'] : '' ?>">
 					</div>
 					<div>
 						<label for="productAmount">Product Amount</label>
-						<input type="text" name="productAmount" id="productAmount" placeholder="number of product less than 7">
+						<input type="text" name="productAmount" id="productAmount" placeholder="number of product less than 7" value="<?= isset($valid_status['values']['productAmount']) ? $valid_status['values']['productAmount'] : '' ?>">
 					</div>
 					<div>
 						<label for="giftWrap">Gift wrap?</label>
@@ -125,11 +121,11 @@ class Page
 					</tr>
 					<tr>
 						<th>Phone</th>
-						<td>Phone entry</td>
+						<td><?= $values['phoneNumber'] ?></td>
 					</tr>
 					<tr>
 						<th>Product Amount</th>
-						<td>Amount entry</td>
+						<td><?= $values['productAmount'] ?></td>
 					</tr>
 					<tr>
 						<th>Gift Wrap?</th>

@@ -1,30 +1,44 @@
-[04-Jul-2025 12:44:49 America/Vancouver] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php:25
-Stack trace:
-#0 C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php(25): array_push(NULL, 'input correct E...')
-#1 C:\xampp\htdocs\demo\Order_Product-PHP\app.php(10): Validate::validateForm()
-#2 {main}
-  thrown in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 25
-[04-Jul-2025 12:47:22 America/Vancouver] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php:22
-Stack trace:
-#0 C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php(22): array_push(NULL, 'Email Address i...')
-#1 C:\xampp\htdocs\demo\Order_Product-PHP\app.php(10): Validate::validateForm()
-#2 {main}
-  thrown in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 22
-[04-Jul-2025 12:50:31 America/Vancouver] Name is required.
-[04-Jul-2025 12:50:31 America/Vancouver] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php:22
-Stack trace:
-#0 C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php(22): array_push(NULL, 'Email Address i...')
-#1 C:\xampp\htdocs\demo\Order_Product-PHP\app.php(10): Validate::validateForm()
-#2 {main}
-  thrown in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 22
-[04-Jul-2025 12:50:39 America/Vancouver] Name is required.
-[04-Jul-2025 12:50:48 America/Vancouver] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php:22
-Stack trace:
-#0 C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php(22): array_push(NULL, 'Email Address i...')
-#1 C:\xampp\htdocs\demo\Order_Product-PHP\app.php(10): Validate::validateForm()
-#2 {main}
-  thrown in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 22
-[04-Jul-2025 12:52:32 America/Vancouver] Email Address is required.
-[04-Jul-2025 12:52:40 America/Vancouver] Name is required.
-[04-Jul-2025 12:52:40 America/Vancouver] Email Address is required.
-[04-Jul-2025 12:53:18 America/Vancouver] Name is required.
+[09-Jul-2025 13:56:38 America/Vancouver] Name is required.
+[09-Jul-2025 13:56:38 America/Vancouver] Input correct Email Address.
+[09-Jul-2025 13:56:38 America/Vancouver] Input correct Phone.
+[09-Jul-2025 13:56:38 America/Vancouver] Product Amount is required.
+[09-Jul-2025 13:56:45 America/Vancouver] Email Address is required.
+[09-Jul-2025 13:56:45 America/Vancouver] Phone is required.
+[09-Jul-2025 13:56:45 America/Vancouver] Product Amount is required.
+[09-Jul-2025 13:58:35 America/Vancouver] Email Address is required.
+[09-Jul-2025 13:58:35 America/Vancouver] Phone is required.
+[09-Jul-2025 13:58:35 America/Vancouver] Product Amount is required.
+[09-Jul-2025 13:58:52 America/Vancouver] Input correct Phone.
+[09-Jul-2025 13:58:52 America/Vancouver] Product Amount is required.
+[09-Jul-2025 13:59:03 America/Vancouver] Input correct Phone.
+[09-Jul-2025 13:59:03 America/Vancouver] Product Amount is required.
+[09-Jul-2025 13:59:14 America/Vancouver] Input correct Phone.
+[09-Jul-2025 13:59:14 America/Vancouver] Product Amount is required.
+[09-Jul-2025 13:59:28 America/Vancouver] Input correct Phone.
+[09-Jul-2025 13:59:28 America/Vancouver] Product Amount is required.
+[09-Jul-2025 13:59:57 America/Vancouver] Input correct Phone.
+[09-Jul-2025 13:59:57 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:00:00 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:00:00 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:00:07 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:00:07 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:00:42 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:03:33 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:03:49 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:07:52 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:09:39 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:13:43 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:14:02 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:14:24 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:14:39 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:14:41 America/Vancouver] Input correct Phone.
+[09-Jul-2025 14:18:24 America/Vancouver] PHP Warning:  Undefined array key "phone" in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Validate.class.php on line 40
+[09-Jul-2025 14:18:24 America/Vancouver] PHP Warning:  Undefined array key "phoneNumber" in C:\xampp\htdocs\demo\Order_Product-PHP\inc\Page.class.php on line 124
+[09-Jul-2025 14:21:52 America/Vancouver] Name is required.
+[09-Jul-2025 14:21:52 America/Vancouver] Email Address is required.
+[09-Jul-2025 14:21:52 America/Vancouver] Phone is required.
+[09-Jul-2025 14:21:52 America/Vancouver] Product Amount is required.
+[09-Jul-2025 14:22:02 America/Vancouver] Name is required.
+[09-Jul-2025 14:22:02 America/Vancouver] Email Address is required.
+[09-Jul-2025 14:22:02 America/Vancouver] Phone is required.
+[09-Jul-2025 14:22:02 America/Vancouver] Product Amount is limited between 1 and 6
